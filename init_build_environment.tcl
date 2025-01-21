@@ -1,7 +1,6 @@
 variable tcl_path [ file dirname [ file normalize [ info script ] ] ] 
 set outputDir ./output
 file mkdir $outputDir
-set source_folder $tcl_path/../../source
 
 proc add_vhdl_file_to_project {vhdl_file} {
     read_vhdl -vhdl2019 $vhdl_file
